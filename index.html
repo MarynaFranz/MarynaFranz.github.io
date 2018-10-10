@@ -6,13 +6,12 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-126958661-1');
     
       function setAlteredPageAndSend() {
         ga('set', 'page', '/altered_page.html')
         ga('send', 'pageview')
-         ga('set', 'campaignName', '/change/altered_page.html');
+        ga('send', 'pageview', {'sessionControl': 'start'});
       }
       
       function simpleSend() {
